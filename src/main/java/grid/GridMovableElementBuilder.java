@@ -1,3 +1,9 @@
+//  GridMovableElementBuilder.java       Author: De Campou Mathieu
+//
+//  Represents a class which implements GridBuilder.
+//  Creation of a grid of Movable elements
+//
+
 package grid;
 
 import element.MovableElement;

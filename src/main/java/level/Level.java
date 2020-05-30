@@ -1,3 +1,8 @@
+//  Level.java       Author: Puy Guillaume
+//
+//  Represents a class which creats a field.
+//
+
 package level;
 
 public class Level {

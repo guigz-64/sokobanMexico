@@ -1,3 +1,9 @@
+//  GridFixedElementBuilder.java       Author: De Campou Mathieu
+//
+//  Represents a class which implements GridBuilder.
+//  This class add the fixed elements to the List. The size of the list is also adapted to number of element.
+//
+
 package grid;
 
 import element.FixedElement;
@@ -20,7 +26,7 @@ public class GridFixedElementBuilder implements GridBuilder {
 
     /**
      * Adds the given fixedElement in the List fixedElement.
-     * Increments indexCurrentCow.
+     * Increments indexCurrentCol.
      *
      * @param fixedElement The element to add.
      */

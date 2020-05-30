@@ -1,3 +1,9 @@
+// GridFixedElement.java       Author: De Campou Mathieu
+//
+//  Represents a method whiwh create a grid with fixed element.
+// 
+//
+
 package grid;
 
 import element.FixedElement;
@@ -7,7 +13,7 @@ import java.util.List;
 
 public class GridFixedElement implements Grid{
 
-    List<List<FixedElement>> elements;
+    List<List<FixedElement>> elements;//declaration of a 2 dimension array which will contain FixedElement
 
     public GridFixedElement(List<List<FixedElement>> elements) {
         this.elements = elements;
@@ -29,11 +35,16 @@ public class GridFixedElement implements Grid{
     public FixedElement get(Coordinate coord){
         return get(coord.getX(), coord.getY());
     }
+    
+     /**
+     *
+     * @return the counter of the number of goals in the grid
+     */
 
     public int getNumGoals() {
         int res = 0;
         for (List<FixedElement> row : elements){
-            res += row.stream().filter(element -> element == FixedElement.GOAL).count();
+            res += row.stream().filter(element -> element == FixedElement.GOAL).count();//if the element of the Fixed Grid is a GOAL, res take +1
         }
         return res;
     }

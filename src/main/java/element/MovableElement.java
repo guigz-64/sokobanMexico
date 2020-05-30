@@ -1,3 +1,9 @@
+//  MovableElement.java       Author: De Campou Mathieu 
+//
+//  Represents an enum which implements Element.
+//  Declaration of the different MovableElement
+//
+
 package element;
 
 public enum MovableElement implements Element {

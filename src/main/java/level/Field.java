@@ -1,3 +1,9 @@
+//  Field.java       Author: Puy Guillaume
+//
+//  Represents a class which permits to move a token, stay in the grid.
+// 
+//
+
 package level;
 
 import element.Element;
@@ -38,6 +44,14 @@ public class Field {
         }
         return movableElements.get(x, y) == null ? fixedElements.get(x, y) : movableElements.get(x, y);
     }
+    
+    /**
+     * Returns the element with coordinates (x,y), or null.
+     *
+     * @param coord
+     * @param dirction
+     * @return the coordinate of the next element on the grid in fuction of the direction chosen
+     */
 
     private Coordinate getNextCoord(Coordinate coord, Direction direction) {
         Coordinate res = new Coordinate(coord.getX(),coord.getY());

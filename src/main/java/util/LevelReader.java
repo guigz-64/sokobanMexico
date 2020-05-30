@@ -1,3 +1,8 @@
+//  LevelReader.java       Author: Puy Guillaume
+//
+//  Represents a class which save a party in a file.
+//
+
 package util;
 
 import element.FixedElement;

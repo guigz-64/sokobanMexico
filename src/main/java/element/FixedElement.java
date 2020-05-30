@@ -1,3 +1,9 @@
+//  FixedElement.java       Author: De Campou Mathieu
+//
+//  Represents enum which implemeents Element.
+//  Declarration of the different FixedElement.
+//
+
 package element;
 
 public enum FixedElement implements Element {

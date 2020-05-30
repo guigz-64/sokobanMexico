@@ -1,3 +1,9 @@
+//  Grid.java       Author: Puy Guillaume
+//
+//  Represents a interface.
+//  It is used to have the coordinates of a token.
+//
+
 package grid;
 
 import element.Element;

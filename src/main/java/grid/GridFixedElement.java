@@ -18,7 +18,7 @@ public class GridFixedElement implements Grid{
      * @param x
      * @param y
      * @return the element with coord (x,y) or null
-     */
+     *//
     @Override
     public FixedElement get(int x, int y){
         if(x < 0 || x > height() || y < 0 || y > length()) return null;

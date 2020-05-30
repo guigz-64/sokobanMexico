@@ -20,6 +20,7 @@ public class LevelReader {
 
     public Level read(int numLevel) throws IOException {
         initReaders(numLevel);
+
         Coordinate characterCoord = readCharacterCoord();
 
         GridFixedElementBuilder gridFixedElementBuilder = new GridFixedElementBuilder();

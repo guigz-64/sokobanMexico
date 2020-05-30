@@ -17,7 +17,7 @@ public class GridFixedElement implements Grid{
      *
      * @param x
      * @param y
-     * @return the element with coord (x,y) or null
+     * @return the element with coord (x,y) or null.
      */
     @Override
     public FixedElement get(int x, int y){
@@ -30,9 +30,14 @@ public class GridFixedElement implements Grid{
         return get(coord.getX(), coord.getY());
     }
 
+    /**
+     * Returns number of goals.
+     *
+     * @return number of goals.
+     */
     public int getNumGoals() {
         int res = 0;
-        for (List<FixedElement> row : elements){
+        for(List<FixedElement> row : elements){
             res += row.stream().filter(element -> element == FixedElement.GOAL).count();
         }
         return res;

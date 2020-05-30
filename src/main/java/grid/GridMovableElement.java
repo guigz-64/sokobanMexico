@@ -1,6 +1,5 @@
 package grid;
 
-import element.Element;
 import element.MovableElement;
 import util.Coordinate;
 import util.Direction;

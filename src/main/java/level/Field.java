@@ -55,7 +55,6 @@ public class Field {
                 res.setY(coord.getY() + 1);
                 break;
         }
-
         return res;
     }
 
@@ -75,7 +74,7 @@ public class Field {
         Element nextElement = nextMovableElements == null ? nextFixedElement : nextMovableElements;
 
         if(nextElement == MovableElement.BOX || nextElement == MovableElement.PLACED_BOX){
-            if (fixedElements.get(getNextCoord(nextElementCoord, direction)) == FixedElement.WALL || movableElements.get(getNextCoord(nextElementCoord, direction)) != null) return;
+            if(fixedElements.get(getNextCoord(nextElementCoord, direction)) == FixedElement.WALL || movableElements.get(getNextCoord(nextElementCoord, direction)) != null) return;
             if(fixedElements.get(getNextCoord(nextElementCoord, direction)) == FixedElement.FLOOR) {
              movableElements.unplace(nextElementCoord);
              movableElements.move(nextElementCoord, direction);
@@ -88,7 +87,6 @@ public class Field {
                 characterCoord.move(direction);
                 return;
             }
-
         }
         characterCoord.move(direction);
     }

@@ -1,3 +1,8 @@
+//  Coordinate.java       Author: Baudorre Grégoire
+//
+//  Represents a class which deals with the coordinates an the moves of thee player.
+//
+
 package util;
 
 import java.util.Objects;
